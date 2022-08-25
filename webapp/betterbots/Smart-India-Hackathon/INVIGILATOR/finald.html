@@ -1,0 +1,140 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+   
+<head>
+    <div class="top_container">
+        <!-- <div class="left_top">
+            <a href="/">
+                <img src="https://drive.google.com/uc?export=download&id=11xsw9jgtCNGijJXphJ_Qn_7b334qXx4q" alt="project_logo" class="logo">
+            </a>
+        </div>  -->
+      
+        <!-- <div class="right_top">
+            <div class="project_desc">
+                <h1><strong>ASCAN</strong></h1>
+            </div> -->
+      
+            <div class="project_com" style="margin-top: 20px;">
+                <center>
+                <a href=".././invigilator/"><h3><strong>Invigilator</strong></h3></a>
+            </center>
+            
+            </div> 
+        </div>
+      
+        <nav class="responsive-nav">
+          <a href=".././"><img src="https://i.postimg.cc/26WxnGqN/basic-logo4.png" class="navbar-logo" alt=""></a>
+          
+          <ul class="navbar-links navbar-collapse">
+            <li class="bar-link"><a href=".././invigilator/scan">Next</a></li>
+            <li class="bar-link"><a href=".././invigilator/logo">Logout</a></li>
+          </ul>
+          
+          <div class="burger menu-toggle">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+        <link rel="stylesheet" type="text/css" href={% static '/EVALUVATOR PAGE/scan.css' %}>  
+    </head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" type="text/css" href={% static '/INVIGILATOR PAGE/application_details.css' %}> -->
+    <link rel="stylesheet" type="text/css" href="../../static/INVIGILATOR PAGE/application_details.css">
+    <title>APPLICATION FORM</title>
+</head>
+<body style="overscroll-behavior: none;">
+
+    <div class="container">
+        <form action="scan">
+            <h2 class="text-center">Student Final Details</h2>
+        <div class="row jumbotron">
+            <tr>
+                <label for="email"><pre>  </pre></label>
+                <td><img src="{{posts.image.url}}" style="width:150px;height:150px;border:0px 300px solid #000;background-color:aliceblue;"></td>
+                </tr>
+            <div class="col-sm-6 form-group">
+                <label for="name-f">Full Name</label>
+                <div class="form-control" name="fname" id="name-f">{{posts.fullname}}</div>
+            </div>
+            
+            <div class="col-sm-6 form-group">
+                <label for="email">E-mail</label>
+                <div class="form-control" name="email" id="email">{{posts.email}}</div>
+            </div>
+            
+            <div class="col-sm-6 form-group">
+                <label for="Application">Username</label>
+                <div class="form-control" name="Application" id="Application">{{posts.username}}</div>
+            </div>
+
+            <div class="col-sm-6 form-group">
+                <label for="center">Answer-Copy UID</label>
+                <div class="form-control" name="center" id="email">{{posts.answerid}}</div>
+            </div>
+
+            <div class="col-sm-2 form-group">
+                <label for="City">City</label>
+                <div class="form-control" name="City" id="City" >{{posts.city}}</div>
+            </div>
+            <div class="col-sm-2 form-group">
+                <label for="State">State</label>
+                <div class="form-control" name="State" id="State">{{posts.state}}</div>
+            </div>
+           
+            <div class="col-sm-2 form-group">
+                <label for="country">Country</label>
+                <div class="form-control" name="country" id="country">{{posts.nationality}}</div>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="Date of Birth">Date of Birth</label>
+                <div class="form-control" name="Date" id="dob">{{posts.dob}}</div>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="Gender">Gender</label>
+                <div class="form-control" name="Gender" id="gender" >{{posts.gender}}</div>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="tel">Phone No.</label>
+                <div name="phone" class="form-control" id="tel">{{posts.contact}}</div>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label for="Status">Status</label>
+                <div name="phone" class="form-control" id="tel">{% if posts.astatus %}
+                                                                  Present
+                                                                {% else %}
+                                                                  Absent
+                                                                {% endif %}
+                </div>
+            </div>
+        </div>
+        <!-- <a>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <input  class="button" type="submit" value="Logout">
+          </a> -->
+        
+    
+    <a href="./scan/">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <input  class="button" type="submit" value="NEXT">
+      </a>
+</div>
+</form>
+</div>
+      
+          
+        
+</body>
+</html>

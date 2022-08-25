@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+
+
+<head>
+  <div class="top_container">
+    <!-- <div class="left_top">
+        <a href="/">
+            <img src="https://drive.google.com/uc?export=download&id=11xsw9jgtCNGijJXphJ_Qn_7b334qXx4q" alt="project_logo" class="logo">
+        </a>
+    </div>  -->
+  
+    <!-- <div class="right_top">
+        <div class="project_desc">
+            <h1><strong>ASCAN</strong></h1>
+        </div> -->
+  
+        <div class="project_com" style="margin-top: 20px;">
+          <a href=".././invigilator/"><h3><strong>Invigilator</strong></h3></a>
+        </div>
+    </div>
+  
+    <nav class="responsive-nav">
+      <a href=".././"><img src="https://i.postimg.cc/26WxnGqN/basic-logo4.png" class="navbar-logo" alt=""></a>
+      
+      <ul class="navbar-links navbar-collapse">
+          <!-- <li class="bar-link"><a href=".././invigilator/scan/">Next</a></li> -->
+          <li class="bar-link"><a href=".././invigilator/logo">Logout</a></li>
+      </ul>
+      
+      <div class="burger menu-toggle">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <link rel="stylesheet" type="text/css" href={% static '/EVALUVATOR PAGE/scan.css' %}>  
+</head>
+
+
+  <link rel="stylesheet" href="../../static/INVIGILATOR PAGE/scan.css">
+</head>
+<body style="overscroll-behavior: none;">
+
+  {% if messages %}
+  
+    {% for message in messages %}
+    <div style="padding: 10px; background: white; color: black;" {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</div>
+    {% endfor %}
+ 
+  {% endif %}
+
+    <div class="login-box">
+        <h2>Scan QR Code</h2>
+        <form action="video_reader" method="POST"> 
+            {% csrf_token %}
+          <div class="user-box">
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <input  class="button" type="submit" value="Scan QR-CODE">
+          </a>
+        </form>
+
+        <form action="logo" method="POST">
+          {% csrf_token %}
+          <div class="user-box">
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+          <input type="submit"  value="LOGOUT">
+            </a>
+      </form>
+      
+      </div>
+</body>

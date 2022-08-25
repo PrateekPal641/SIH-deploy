@@ -1,0 +1,147 @@
+
+
+*{
+    box-sizing: border-box;
+}
+.top_container{
+    background-color: #a1daf1;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.left_top{
+    width: 25%;
+    height: 100%;
+}
+
+.logo{
+    width: 45%;
+    height: 100%;
+}
+
+.right_top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project_desc{
+    align-items: center;
+    height: 5%;
+}
+.project_desc h1{
+    display: block;
+    margin-top: 0.67em;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    padding-left: 230px;
+    
+}
+
+.project_com{
+    align-items:flex-start;
+    padding-left: 10px;
+}
+
+.project_com h2{
+    display: block;
+    margin-top: 0;
+    margin-left: 0;
+    
+}
+
+.master_container{
+    display: flex;
+    flex-direction: column;
+    height: 950px;
+    justify-content: space-between;
+    background-image: url('../../static/LANDING PAGE/5040007.jpg');
+    background-size: cover;
+    text-align: center;
+}
+
+.container{
+    height: 100%;
+    width: 90%;
+}
+
+.btn-grad{
+    text-transform: uppercase;
+    color: rgba(244, 238, 238, 0.906);
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 20px;
+    width: 250px;
+}
+
+.btn-grad b{
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+.student_button{
+    width: 100%;
+    height: 10%;
+    padding-top: 50px;
+    padding-left: 95px;
+}
+
+.invigilator_button{
+    width: 100%;
+    height: 10%;
+    padding-top: 50px;
+    padding-left: 95px;
+}
+
+.examiner_button{
+    width: 100%;
+    height: 10%;
+    padding-top: 50px;
+    padding-left: 95px;
+}
+
+.blue_line{
+    width: 93%;
+    height: 4px;
+    background-color: #4691ea;
+    margin-left: 111px;
+    margin-top: 70px;
+}
+
+.team_name{
+    align-items: center;
+    height: 10%;
+    padding-top: 110px;
+    padding-left: 98px;
+}
+
+.team_name h2{
+    text-transform: uppercase;
+    color: rgba(244, 238, 238, 0.906);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 20px;
+    width: 250px;
+}
+
+.team_members{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 20%;
+    margin-left: 200px;
+    margin-top: 100px
+}
+
+.harshit{
+    width: 10%;
+    height: 10%;
+}
+

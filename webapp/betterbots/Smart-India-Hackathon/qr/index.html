@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>title</title>
+</head>
+<body>
+    <div>
+        <form action="" method="post">
+            {% csrf_token %}
+            <h3 id="h1">Enter Answer Copy Serial No. <input type="text" name="data" ></h3>
+            <input type="submit" value="SUBMIT">
+        </form>
+    </div>
+    <div>
+        {% if data %}
+        
+        <h4>Your QR Code is:</h4>
+            <img src="{% static 'qrcode/test.png' %}">
+        {% endif %}
+    </div>
+    <form action="video_reader" method="post">
+        {% csrf_token %}
+        <input type="submit"  value="SCAN   QR   CODE">
+    </form>
+
+</body></html>

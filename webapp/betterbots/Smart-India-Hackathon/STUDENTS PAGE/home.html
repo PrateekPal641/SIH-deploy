@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+ 
+<head>
+    <div class="top_container">
+        <!-- <div class="left_top">
+            <a href="/">
+                <img src="https://drive.google.com/uc?export=download&id=11xsw9jgtCNGijJXphJ_Qn_7b334qXx4q" alt="project_logo" class="logo">
+            </a>
+        </div>  -->
+      
+        <!-- <div class="right_top">
+            <div class="project_desc">
+                <h1><strong>ASCAN</strong></h1>
+            </div> -->
+      
+            <div class="project_com" style="margin: 10px; text-align:center; margin-top: 20px;"">
+                <h2><strong>Student</strong></h2>
+            </div>
+        </div>
+      
+        <nav class="responsive-nav">
+          <a href=".././"><img src="https://i.postimg.cc/26WxnGqN/basic-logo4.png" class="navbar-logo" alt=""></a>
+          
+          <ul class="navbar-links navbar-collapse">
+            <li class="bar-link"><a href=".././">Home</a></li>
+            <li class="bar-link"><a href=".././invigilator/">Invigilator</a></li>
+            <li class="bar-link"><a href=".././evaluator/">Evaluator</a></li>
+          </ul>
+          
+          <div class="burger menu-toggle">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+        <link rel="stylesheet" type="text/css" href="../../static/STUDENTS PAGE/home.css">  
+        <link rel="stylesheet" type="text/css" href={% static '/EVALUVATOR PAGE/scan.css' %}> 
+        
+    <!-- <link rel="stylesheet" href="../../static/STUDENTS PAGE/home.css"> -->
+</head>
+<body style="overscroll-behavior: none;">
+    <div id="rectangle"></div>
+<div class="buttons-coll">
+    <a href="{% url 'studenthome:application' %}">
+    <button class="custom-btn btn-11">APPLY HERE</button>
+    </a> 
+
+    
+    <a href="{% url 'studenthome:result' %}">
+    <button class="custom-btn btn-11">CHECK RESULTS</button>
+    </a>
+</div>
+</body>
